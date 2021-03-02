@@ -23,6 +23,13 @@ public class GeoLocator {
         return getGeoLocation(null);
     }
 
+    /**
+     *
+     * @param ipAddrOrHost the ip address or host name
+     * @return an object wrapping the geolocation info required
+     * @throws IOException if any i/o error occurs
+     */
+
     public GeoLocation getGeoLocation(String ipAddrOrHost) throws IOException {
         URL url;
         if (ipAddrOrHost != null) {
